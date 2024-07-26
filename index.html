@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Please Enter Your name <input type="email" placeholder="Enter Your name" onfocus="onfun()"  onblur="offfun()" onsubmit="Submit()" onselect="select()"  id="class">
+        <input type="submit">
+    </form>
+    <script>
+        let input = document.getElementById("class");
+        function onfun(){
+            input.style.backgroundColor="pink";
+        }
+        function offfun(){
+            input.style.backgroundColor ="yellow";    
+           }
+      
+        function Submit(){
+            alert('${input.value}')
+        }
+
+        function select(){
+            alert("you selected something")
+        }
+    </script>
+</body>
+</html>
